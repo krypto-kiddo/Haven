@@ -1,3 +1,6 @@
+# The script that helped query the archival NEAR RPC endpoint (before shamelessy exhausting our free API limits)
+# Brought to you by @krypto-kiddo and @sassycular
+
 import requests
 url = "https://archival-rpc.mainnet.near.org"
 import csv
@@ -115,3 +118,5 @@ for b_id in range(low_blocks_limit,up_blocks_limit):
     except:
       print("skipped")
       continue
+
+ # END OF CODE
