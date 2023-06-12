@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NEAR Protocol Security Tool</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    input, button {
+      font-size: 1rem;
+    }
+  </style>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>NEAR Protocol Security Tool</h1>
+  <h2>Flag/Report an Address</h2>
+  <form id="reportForm">
+    <input type="text" id="reportAddress" placeholder="Enter address" required>
+    <button type="submit">Report</button>
+  </form>
+  <h2>Search an Address</h2>
+  <form id="searchForm">
+    <input type="text" id="searchAddress" placeholder="Enter address" required>
+    <button type="submit">Search</button>
+  </form>
+  <div id="searchResult"></div>
+  <script>
+    const reportForm = document.getElementById('reportForm');
+    const searchForm = document.getElementById('searchForm');
+    const searchResult = document.getElementById('searchResult');
+
+    reportForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const address = document.getElementById('reportAddress').value;
+      const response = await fetch('/api/report', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ address }),
+      });
+      if (response.ok) {
+        alert('Address reported successfully');
+        reportForm.reset();
+      } else {
+        alert('Error reporting address');
+      }
+    });
+
+    searchForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const address = document.getElementById('searchAddress').value;
+      const response = await fetch(`/api/search/${address}`);
+      if (response.ok) {
+        const data = await response.json();
+        searchResult.textContent = `Address has been reported ${data.count} times`;
+      } else {
+        alert('Error searching address');
+      }
+    });
+  </script>
+</body>
+</html>
