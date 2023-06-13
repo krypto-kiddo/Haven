@@ -1,5 +1,7 @@
 # NEAR Protocol Security Tool : Flagging Feature
 
+(Ver 2 Update log: Contains only UI upgrades, with major changes in pulic/styles.css and a few changes in public/index.html. A folder named assets has been added with certain image assets inside. Rest of the stuff, especially app.js remains untouched.)
+
 Welcome to the NEAR Protocol Security Tool repository! This tool allows you to flag and search addresses for security purposes on the NEAR Protocol blockchain.
 
 ## Table of Contents
