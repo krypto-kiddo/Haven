@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+.card-container {
+  display: flex;
+  justify-content: center;
+font-family: 'Poppins', sans-serif;
+
+}
+
+.card {
+background:rgba(255,255,255,0.9);
+  width: 300px;
+  margin: 0 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  text-align: center;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+body {
+  background-image: url("assets/bg1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+.button-52 {
+  background-color: #E9CBFF;
+  border: 2px solid #422800;
+  border-radius: 30px;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #422800;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 38px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-52:hover {
+  background-color: #fff;
+}
+
+.button-52:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .button-52 {
+    min-width: 120px;
+    padding: 0 25px;
+  }
+}
+
+h1 {
+color:#fff;
+font-family: 'Poppins', sans-serif;
+text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+}
+
+.tbx {
+line-height: 38px;
+border: 1px solid rgba(0,0,0,0.2);
+border-radius:20px;
+padding:2px 2px 2px 10px;
+width: 90%;
+}
+
+    .search-svg svg path {
+      fill: url(#searchGradient);
+    }
+
+    .search-svg {
+      width: 51px;
+      height: 51px;
+    }
+
+ .flag-svg svg path {
+      fill: url(#flagGradient);
+    }
+
+    .flag-svg {
+      width: 51px;
+      height: 51px;
+    }
+
+
