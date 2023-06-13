@@ -32,6 +32,8 @@ Once the server is running, you can access the tool by visiting the provided URL
 - **Flag/Report an Address**: Enter an address to flag/report it as potentially malicious or vulnerable. This information will be stored and can be searched later.
 - **Search an Address**: Enter an address to search for any reported flags. The tool will display the number of times the address has been reported.
 
+![image](https://github.com/krypto-kiddo/Haven/assets/97212160/6c267a47-ab7f-4933-8244-6c713b0997fd)
+
 ## Contributing
 Contributions to this project are welcome! If you have any ideas, suggestions, or bug reports, please open an issue or submit a pull request. For major changes, please open an issue first to discuss the changes with the project maintainers.
 
