@@ -52,6 +52,4 @@ Certainly! Here's a suggested "Updates" section you can add to your README:
 ## Updates
 
 **16 January 2023**
-- Added network graph visualization: A network graph was implemented to visualize the transaction data, providing insights into the connections between signer and receiver account IDs. The graph showcases the relationships between accounts and highlights nodes with different colors based on the number of transactions. Additionally, edges are displayed with a fixed color and opacity for improved clarity.
-
-Feel free to modify the content and add more details as needed.
+- Added network graph visualization: A network graph was implemented to visualize the transaction data, providing insights into the connections between signer and receiver account IDs. The graph showcases the relationships between accounts and highlights nodes with different colors based on the number of transactions. 
