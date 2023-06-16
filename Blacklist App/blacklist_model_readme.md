@@ -46,3 +46,12 @@ This script performs analysis on a dataset of transactions and provides insights
 - K-means clustering is applied to group the transactions into clusters.
 - The script provides cluster statistics, including mean values for each feature in each cluster.
 - The receiver addresses from the smallest cluster are displayed as potential suspicious addresses.
+
+Certainly! Here's a suggested "Updates" section you can add to your README:
+
+## Updates
+
+**16 January 2023**
+- Added network graph visualization: A network graph was implemented to visualize the transaction data, providing insights into the connections between signer and receiver account IDs. The graph showcases the relationships between accounts and highlights nodes with different colors based on the number of transactions. Additionally, edges are displayed with a fixed color and opacity for improved clarity.
+
+Feel free to modify the content and add more details as needed.
